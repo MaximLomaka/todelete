@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resume</title>
+    <meta charset="utf-8"/>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+<div>
+<h1>Users</h1>
+    {% block content %}
+        {% for user in resume_list %}
+		<h5><a href="/user/{{  user.id}} "> {{user.first_name }}  {{ post.last_name }}</a></h5>
+	{% endfor %}
+    {% endblock %}
+</div>
+</body>
+
+</html>
